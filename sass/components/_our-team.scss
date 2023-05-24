@@ -1,0 +1,85 @@
+// style our team
+
+.our-team {
+    background-color: $brand-color-ordinary;
+
+    &__overlay {
+        display: flex;
+        gap: $grid-margin;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: $grid-margin;
+    }
+
+    &__meta {
+        background-color: $brand-color-white;
+        width: 270px;
+        height: 428px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        margin: 0;
+        padding: 0px;
+    }
+
+    &__item {
+        padding-top: $grid-margin;
+        padding-bottom: $grid-margin;
+        text-align: center;
+    }
+
+    &__name {
+        font-weight: $fontSmall;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: $paragraf-text-color;
+    }
+
+    &__properties {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    &__properties > li {
+        padding: 12px 12px;
+        border-radius: 50%;
+    }
+
+    &__properties li:hover,
+    &__properties li:focus {
+        background-color: $brand-color-primary;
+        $background-icon-color: $brand-color-white;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    &__icons {
+        transition-property: color, background-color, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+
+    &__icons a:hover,
+    &__icons a:focus {
+        transform: scale(1.1);
+    }
+
+    &__link {
+        fill: $background-icon-color;
+        display: block;
+    }
+}

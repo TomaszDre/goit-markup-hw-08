@@ -1,0 +1,58 @@
+// style what we do
+
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 94px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $grid-margin;
+        padding: 0px;
+    }
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__description {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 27px 0px 27px 90px;
+        border-bottom-left-radius: 4px;
+        background: $background-color-thumb;
+        letter-spacing: 0.03em;
+        font-weight: $fontMedium;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $brand-color-white;
+        font-size: 14px;
+    }
+
+    &__description--start {
+        padding-left: 113px;
+    }
+
+    &__description--end {
+        padding-left: 94px;
+    }
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+        font-weight: $fontMedium;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,26 @@
+// style lorem ipsum
+
+.feature {
+    font-family: $main-font;
+    display: flex;
+    justify-content: center;
+    gap: $grid-margin;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: $fontMedium;
+        margin-bottom: 10px;
+        line-height: 1;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        margin-top: $grid-margin;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0px;
+        border-radius: 4px;
+        background: $brand-color-ordinary;
+    }
+}

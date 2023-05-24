@@ -1,0 +1,49 @@
+// style form
+
+.form {
+    margin-left: 78px;
+
+    &__title {
+        color: $brand-color-white;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    // email
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        width: 358px;
+        height: 50px;
+        position: relative;
+    }
+
+    &__input {
+        color: $footer-text-color;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        line-height: 1.25;
+        border: 1px solid $form-window-border;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 0px 15px 16px;
+        background-color: $brand-color-background;
+    }
+}
+// .form__style {
+//     padding: 15px 0px 15px 16px;
+//     background-color: var(--brand-color-background);
+// } 480 linijka w index
