@@ -85,6 +85,11 @@ body {
     font-size: 14px;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -110,8 +115,22 @@ footer:hover {
     color: $brand-color-primary;
 }
 
+// .container {
+//     margin: 0 auto;
+//     width: 1200px;
+//     padding: 0 15px;
+// }
 .container {
+    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
-    width: 1200px;
     padding: 0 15px;
+
+
+@include tablet {
+    max-width: 768px;
+}
+@include desktop {
+    max-width: 1200px;
+}
 }

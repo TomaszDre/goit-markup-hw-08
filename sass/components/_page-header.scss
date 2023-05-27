@@ -5,10 +5,21 @@
     height: 80px;
     border-bottom: solid 1px;
     border-color: $line-color;
-
+    @media (min-width: 768px) and (max-width: 1200px) {
+    }
     &__head {
         display: flex;
         align-items: center;
+    }
+    &__none {
+        display: none;
+    }
+    &__menu-toggle {
+        background-color: transparent;
+        border: none;
+        @include tablet {
+            display: none;
+        }
     }
 }
 // contacts header
@@ -17,6 +28,10 @@
     display: flex;
     gap: 50px;
     margin-left: auto;
+    @media (min-width: 768px) and (max-width: 1200px) {
+        display: block;
+        font-size: 12px;
+    }
 
     &__link {
         font-weight: $fontSmall;
@@ -38,6 +53,10 @@
         transition-property: color, transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media (min-width: 768px) and (max-width: 1200px) {
+            padding: 6px;
+            padding-left: 101px;
+        }
     }
 
     &__content:hover,
@@ -62,6 +81,9 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: $brand-color-primary;
+    @media (min-width: 768px) and (max-width: 1200px) {
+        font-size: 24px;
+    }
 
     &__item {
         transition-property: transform;
@@ -90,6 +112,10 @@
     display: flex;
     gap: 46px;
     margin-left: 93px;
+    @media (min-width: 768px) and (max-width: 1200px) {
+        gap: 60px;
+        margin-left: 83px;
+    }
 
     &__item {
         position: relative;

@@ -1,6 +1,7 @@
 // style what we do
 
 .what-we-do {
+    display: none;
     display: flex;
     flex-direction: column;
     padding-bottom: 94px;
@@ -45,8 +46,6 @@
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 
     &__title {
         font-weight: $fontMedium;
