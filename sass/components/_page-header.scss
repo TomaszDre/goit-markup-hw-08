@@ -1,13 +1,18 @@
 // // style header
 
 .page-header {
-    
     // display: none;
-    height: 80px;
+    padding: 10px 0;
     border-bottom: solid 1px;
     border-color: $line-color;
-    // @media (min-width: 768px) and (max-width: 1200px) {
-    // }
+
+    @include tablet {
+        padding: 21px 0;
+    }
+    @include desktop {
+        padding: 24px 0 25px;
+        height: 80px;
+    }
     &__head {
         display: flex;
         align-items: center;
@@ -33,6 +38,16 @@
 
 .contacts {
     display: none;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 30px;
+    }
     // display: flex;
     gap: 50px;
     margin-left: auto;
@@ -83,7 +98,6 @@
 // style logo
 
 .logo {
-    
     font-family: $secondary-font;
     font-weight: $fontMedium;
     font-size: 26px;
@@ -118,10 +132,18 @@
 
 .navigation {
     display: none;
+    @include tablet {
+        display: flex;
+        margin-left: 83px;
+        margin-right: auto;
+    }
+    @include desktop {
+        display: flex;
+        margin-left: 93px;
+    }
     align-items: center;
-    // display: flex;
     gap: 46px;
-    margin-left: 93px;
+
     // @media (max-width: 767px) {
     //     display: none;
     //     gap: 60px;
