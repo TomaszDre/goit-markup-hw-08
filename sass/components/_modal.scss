@@ -3,6 +3,7 @@
 // tworzenie modala
 
 .modal {
+    display: none;
     position: absolute;
     height: 581px;
     background-color: $brand-color-white;
@@ -241,10 +242,11 @@
 // modal zamknięcie
 
 .close {
+    display: none;
     position: absolute;
     width: $grid-margin;
     height: $grid-margin;
-    display: block;
+    //  
     top: 8px;
     right: 8px;
     border: 1px solid $button-modal;
@@ -256,6 +258,7 @@
 // tworzenie modala-------------------------
 
 .backdrop {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;

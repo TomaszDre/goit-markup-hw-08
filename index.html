@@ -28,15 +28,19 @@
                 class="logo logo__item"
                 ><span>Web</span><span class="logo--black">Studio</span></a> 
 
-                <button type="button" class="menu-toggle js-open-menu" aria-expended="false" aria-expanded="mobile-menu">
-                    <svg class="menu-toggle__button" width="40" hight="40">
+                <button 
+                type="button" 
+                class="page-header__navi js-open-menu" 
+                aria-expended="false" 
+                aria-expanded="mobile-menu">
+                    <svg class="page-header__button" width="40" hight="40">
                         <use href="/images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
            
            <nav>
             
-                <ul class="navigation page-header__none">
+                <ul class="navigation">
                     <li><div class="navigation__item"><a href="index.html" class="navigation__link">Agencja</a></div></li>
                     <li><a href="./portfolio.html" class="navigation__link">Portfolio</a></li>
                     <li><a href="/kontakt" class="navigation__link">Kontakt</a></li>
@@ -407,19 +411,7 @@
         </section>
         </main>
 
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button type="button" class="menu-toggle js-close-menu">
-                <svg class="menu-container__close-btn" width="18" hight="18">
-                    <use href="/images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-
-        <ul class="mobile-menu">
-            <li><div class="navigation__item"><a href="index.html" class="mobile-menu__link">Agencja</a></div></li>
-            <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
-            <li><a href="/kontakt" class="mobile-menu__link">Kontakt</a></li>
-        </ul>
-        </div>
+        
         <!-- <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg
@@ -557,12 +549,67 @@
 
         </footer>
 
+<!-- mobile menu----------------------- -->
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+
+            <button type="button" 
+                    class="menu-container__close-btn js-close-menu">
+                <svg width="18" hight="18">
+                    <use href="/images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+
+        <ul class="mobile-menu">
+            <li>
+                <div class="navigation__item">
+                    <a href="index.html" class="mobile-menu__link">Agencja</a></div></li>
+            <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+            <li><a href="/kontakt" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+        </div>
+                
+            <div class="menu-container__mobile-contact">
+                <a href="tel:+48111111111" class="mobile-contact__tel">
+                    +48 111 111 111</a>
+            
+            <a href="mailto:info@devstudio.com" class="mobile-contact__email"> 
+               info@devstudio.com</a>
+            </li>
+        </div>
+       
+        <ul class="mobile-socials"> 
+
+            <li class="mobile-socials__item"> 
+                <a href="#" class="mobile-socials__link">
+                Instagram
+            </a>
+            </li>
+
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">
+                Twitter
+                </a>
+            </li>
+
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">
+               Facebook
+                </a>
+            </li>
+
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">
+              LinkedIn
+                </a>
+            </li>
+
+            </ul>
+
         <!-- okno modala -->
 
         <div class="backdrop is-hidden" data-modal>
-            
             <div class="modal">
-                
                 <button type="button" class="close" data-modal-close> 
                     &#10006;
                 </button>

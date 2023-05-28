@@ -2,7 +2,7 @@
 
 .what-we-do {
     display: none;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     padding-bottom: 94px;
 
@@ -46,6 +46,7 @@
 }
 
 .section {
+    display: none;
 
     &__title {
         font-weight: $fontMedium;

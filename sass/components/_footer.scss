@@ -1,7 +1,8 @@
 // style footer
 
 .footer {
-    display: flex;
+    // display: flex;
+    display: none;
 
     &__meta {
         display: block;
@@ -67,6 +68,7 @@
 //  button zapisz się
 
 .footer-btn {
+    display: none;
     margin-left: 12px;
 
     &__icon {
@@ -94,6 +96,7 @@
 // address footer
 
 .address {
+    display: none;
     margin-top: 20px;
 
     &__gap:not(:last-child) {
