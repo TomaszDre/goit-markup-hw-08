@@ -16,6 +16,7 @@
     &__head {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     // &__none {
     //     display: none;
@@ -29,6 +30,9 @@
         @include tablet {
             display: none;
         }
+    }
+    &__navs {
+        display: none;
     }
     // &__button {
 
